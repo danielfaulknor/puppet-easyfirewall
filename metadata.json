@@ -1,0 +1,16 @@
+{
+  "name": "internetbydesign-easyfirewall",
+  "version": "0.1.0",
+  "author": "internetbydesign",
+  "summary": "Simple defaults for the puppetlabs/firewall module",
+  "license": "Apache-2.0",
+  "source": "https://github.com/danielfaulknor/puppet-easyfirewall.git",
+  "project_page": "https://github.com/danielfaulknor/puppet-easyfirewall",
+  "issues_url": "https://github.com/danielfaulknor/puppet-easyfirewall/issues",
+  "dependencies": [
+    {"name":"puppetlabs-stdlib","version_requirement":">= 1.0.0"}
+    {"name":"puppetlabs-firewall","version_requirement":">= 1.8.0"}
+  ],
+  "data_provider": null
+}
+
