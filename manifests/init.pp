@@ -46,6 +46,13 @@ class easyfirewall {
 
   class { ['easyfirewall::pre', 'easyfirewall::post']: }
 
+  resources { 'firewall':
+    purge => true,
+  }
+
+  resources { 'firewallchain':
+    purge => true,
+  }
 
   Firewall {
     before  => Class['easyfirewall::post'],
