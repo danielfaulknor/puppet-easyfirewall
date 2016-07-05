@@ -50,10 +50,6 @@ class easyfirewall {
     purge => true,
   }
 
-  resources { 'firewallchain':
-    purge => true,
-  }
-
   Firewall {
     before  => Class['easyfirewall::post'],
     require => Class['easyfirewall::pre'],
