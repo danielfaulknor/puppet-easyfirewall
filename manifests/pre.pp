@@ -24,7 +24,7 @@ class easyfirewall::pre {
     action  => 'accept',
   }->
   firewall { "004 Allow inbound SSH (v4)":
-    port     => 22,
+    dport     => 22,
     proto    => tcp,
     action   => accept,
   }
@@ -61,7 +61,7 @@ class easyfirewall::pre {
     provider => 'ip6tables',
   }->
   firewall { "004 Allow inbound SSH (v6)":
-    port     => 22,
+    dport     => 22,
     proto    => tcp,
     action   => accept,
     provider => 'ip6tables',
