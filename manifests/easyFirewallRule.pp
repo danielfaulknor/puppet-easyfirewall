@@ -1,6 +1,4 @@
-class easyfirewall::rules ($rule) {
-
-define easyFirewallRule {
+define easyFirewallRule(String[1] $name) {
 
     case $name {
         'web': {
@@ -37,6 +35,4 @@ define easyFirewallRule {
              }
          }
     }
-}
-EasyFirewallRule { $rule: }
 }

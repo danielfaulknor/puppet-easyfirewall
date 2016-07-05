@@ -44,6 +44,9 @@
 #
 class easyfirewall {
 
+  class { ['easyfirewall::pre', 'easyfirewall::post']: }
+
+
   Firewall {
     before  => Class['easyfirewall::post'],
     require => Class['easyfirewall::pre'],
